@@ -10,12 +10,12 @@ input.onButtonPressed(Button.B, function () {
 })
 let Pixel = 0
 let strip: neopixel.Strip = null
-strip = neopixel.create(DigitalPin.P2, 64, NeoPixelMode.RGB)
+strip = neopixel.create(DigitalPin.P2, 256, NeoPixelMode.RGB)
 strip.clear()
 strip.setBrightness(64)
 strip.show()
 Pixel = 0
-basic.showIcon(IconNames.Heart)
+basic.showIcon(IconNames.Yes)
 basic.forever(function () {
     strip.setPixelColor(Pixel, neopixel.colors(NeoPixelColors.Green))
     strip.show()
